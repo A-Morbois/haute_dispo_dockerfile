@@ -1,0 +1,11 @@
+{
+  "name": "centos-dyn-nodejs-hello",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Node.js dynamically configured Hello World app on CentOS using docker",
+  "author": "Damien DUPORTAL <damien.duportal@gmail.com>",
+  "dependencies": {
+    "express": "3.2.4",
+    "pg": "2.11.1"
+  }
+}
