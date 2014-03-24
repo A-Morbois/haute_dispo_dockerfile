@@ -8,7 +8,7 @@ ADD package.json /src/
 RUN npm config set strict-ssl false
 RUN cd /src; npm install
 ADD index.js /src/
-RUN git clone https://github.com/WordPress/WordPress /var/www/
+RUN cd /var/www/; git clone https://github.com/WordPress/WordPress 
 
 
 EXPOSE  8080
