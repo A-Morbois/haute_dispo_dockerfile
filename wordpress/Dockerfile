@@ -34,7 +34,7 @@ RUN cd /var/www/; git clone https://github.com/WordPress/WordPress
 
 
 ADD nginx.conf /etc/nginx/
-ADD upstream.conf /etc/nginx/
+#ADD upstream.conf /etc/nginx/
 
 EXPOSE 80
 CMD nginx -c /etc/nginx/nginx.conf
