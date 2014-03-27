@@ -29,7 +29,7 @@ RUN apt-get install -y nano wget dialog net-tools
 RUN apt-get install -y nginx
 
 RUN rm -v /etc/nginx/nginx.conf
-RUN mkdir -p /var/www
+RUN mkdir  /var/www/
 RUN cd /var/www/; git clone https://github.com/WordPress/WordPress 
 
 
