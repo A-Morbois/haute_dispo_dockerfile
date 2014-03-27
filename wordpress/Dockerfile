@@ -11,7 +11,7 @@ ADD index.js /src/
 RUN mkdir /var/www/;
 
 RUN cd /var/www/; git clone https://github.com/WordPress/WordPress 
-RUN mv WorddPress/* ./
+RUN mv WordPress/* ./
 RUN rmdir WordPress/
 
 
