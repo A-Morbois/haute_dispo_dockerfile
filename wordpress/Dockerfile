@@ -8,6 +8,7 @@ ADD package.json /src/
 RUN npm config set strict-ssl false
 RUN cd /src; npm install
 ADD index.js /src/
+RUN mkdir /var/www/;
 RUN cd /var/www/; git clone https://github.com/WordPress/WordPress 
 
 
