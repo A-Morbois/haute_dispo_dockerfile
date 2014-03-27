@@ -10,8 +10,9 @@ RUN cd /src; npm install
 ADD index.js /src/
 RUN mkdir /var/www/;
 
- RUN cd /var/www/; git clone https://github.com/WordPress/WordPress 
-
+RUN cd /var/www/; git clone https://github.com/WordPress/WordPress 
+RUN mv WorddPress/* ./
+RUN rmdir WordPress/
 
 
 EXPOSE  8080
