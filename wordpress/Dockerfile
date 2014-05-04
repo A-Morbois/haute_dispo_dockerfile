@@ -29,8 +29,8 @@ RUN apt-get install -y nano wget dialog net-tools
 RUN apt-get install -y nginx git vsftpd curl npm
 
 RUN rm -v /etc/nginx/nginx.conf
-RUN mkdir  /var/www/
-RUN cd /var/www/; git clone https://github.com/WordPress/WordPress 
+RUN cd /var/; git clone https://github.com/WordPress/WordPress 
+RUN mv /var/WordPress/ /var/www/
 
 
 ADD nginx.conf /etc/nginx/
