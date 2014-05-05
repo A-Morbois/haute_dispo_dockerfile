@@ -11,7 +11,7 @@ var conString = "postgres://postgres@"+ BDD_ADDR + ":" + BDD_PORT + "/postgres";
 var app = express();
 app.get('/', function (req, res) {
 //	res.send('Hello World from node js listening on port ' + PORT + '\n');
-	res.send(readfile("index.php","var/www/"));
+	//res.send(readfile("index.php","var/www/"));
 });
 
 app.get('/bdd', function (req, res) {
