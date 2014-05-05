@@ -36,5 +36,5 @@ RUN mv /var/WordPress/ /var/www/
 ADD nginx.conf /etc/nginx/
 #ADD upstream.conf /etc/nginx/
 
-EXPOSE 80
+EXPOSE 8080
 CMD nginx -c /etc/nginx/nginx.conf
