@@ -15,7 +15,8 @@ RUN mv /var/WordPress/ /var/www/
 
 
 EXPOSE  8080
-CMD ["node", "/src/index.js"]
+#CMD ["node", "/src/index.js"]
+CMD ["node", "/var/www.php"]
 
 
 #test juste avec nginx
