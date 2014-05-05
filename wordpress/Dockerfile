@@ -13,14 +13,12 @@ RUN cd /var/; git clone https://github.com/WordPress/WordPress
 RUN mv /var/WordPress/ /var/www/
 
 
-#RUN cd /var/www/; git clone https://github.com/WordPress/WordPress 
-#RUN mv WordPress/* ./
-#RUN rmdir WordPress/
-
 
 EXPOSE  8080
 CMD ["node", "/src/index.js"]
 
+
+#test juste avec nginx
 
 #FROM ubuntu
 #MAINTAINER antoine.morbois@gmail.com
