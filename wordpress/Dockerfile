@@ -2,7 +2,7 @@
 FROM    centos
 
 RUN     rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
-RUN     yum install -y npm curl vsftpd git
+RUN     yum install -y npm curl vsftpd git nginx
 
 ADD package.json /src/
 RUN npm config set strict-ssl false
