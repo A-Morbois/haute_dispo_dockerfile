@@ -13,9 +13,12 @@ app.get('/', function (req, res) {
  	//res.send('Hello World from node js listening on port ' + PORT + '\n');
 	//res.send(readfile("index.php","var/www/"));
 	//window.location = 'http://localhost/index.php';
-	load("/var/www/index.php");
-});
+//	load("/var/www/index.php");
+	res.send('Ici s affiche normalement le contenu du fichier index.php wordpress, fichier que je n arrive pas à lire');
 
+	
+});
+/*
 app.get('/bdd', function (req, res) {
 	var client = new pg.Client(conString);
 	client.connect(function(err) {
@@ -33,6 +36,6 @@ app.get('/bdd', function (req, res) {
 		});
 	});
 });
-
+*/
 app.listen(PORT)
 console.log('Running on http://localhost:' + PORT);
